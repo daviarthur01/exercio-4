@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTUS</title>
+
+    <style>
+        #container {
+            background-color: rgba(0, 0, 0, 0.215);
+            width: 900px;
+            text-align: center;
+            margin: auto;
+            margin-top: 100px;
+            height: 400px;
+        }
+
+        #area {
+            width: 400px;
+            margin: auto;
+        }
+
+        #qntd {
+            width: 400px;
+            margin: auto;
+        }
+
+        #aparelhos {
+            width: 400px;
+            margin: auto;
+        }
+
+        #button {
+            margin-top: 33px;
+        }
+
+        body {
+            background-image: linear-gradient(83deg, black, red);
+            background-size: 100%;
+        }
+
+        #h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="java.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="h1">Calcular BTUS</h1>
+
+        <p>Área do cômodo (m²)</p>
+        <input type="text" class="form-control" id="area" aria-label="Default"
+            aria-describedby="inputGroup-sizing-default">
+
+        <p>Quantidade de pessoas no cômodo</p>
+        <input type="text" class="form-control" id="qntd" aria-label="Default"
+            aria-describedby="inputGroup-sizing-default">
+
+        <p>Quantidade de aparelhos eletronicos</p>
+        <input type="text" class="form-control" id="aparelhos" aria-label="Default"
+            aria-describedby="inputGroup-sizing-default">
+
+
+        <button type="button" class="btn btn-success" id="button" onclick="Calcular()">Calcular</button>
+    </div>
+</body>
+
+</html>
